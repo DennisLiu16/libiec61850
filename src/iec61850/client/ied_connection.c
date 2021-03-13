@@ -1183,6 +1183,8 @@ IedConnection_readObject(IedConnection self, IedClientError* error, const char* 
 
     domainId = MmsMapping_getMmsDomainFromObjectReference(objectReference, domainIdBuffer);
     itemId = MmsMapping_createMmsVariableNameFromObjectReference(objectReference, fc, itemIdBuffer);
+    printf("domain:%s\n",domainId);
+    printf("item:%s\n",itemId);
 
     if ((domainId == NULL) || (itemId == NULL)) {
         *error = IED_ERROR_OBJECT_REFERENCE_INVALID;

@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "iec61850_server.h": "c",
+        "iec61850_client.h": "c",
+        "static_model.h": "c"
+    }
+}

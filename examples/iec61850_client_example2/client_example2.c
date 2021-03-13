@@ -62,6 +62,7 @@ main(int argc, char** argv)
     if (argc > 2)
         tcpPort = atoi(argv[2]);
 
+
     IedClientError error;
 
     IedConnection con = IedConnection_create();
@@ -198,7 +199,7 @@ main(int argc, char** argv)
     else {
         printf("Connection failed!\n");
     }
-
+    printf("TCPIP Port:%d",tcpPort);
 cleanup_and_exit:
     IedConnection_destroy(con);
 }
